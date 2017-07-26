@@ -1,0 +1,84 @@
+{{ content_for_index }}
+
+<body>
+  <div class="container">
+    <div class="back"></div>
+  <div class="row-1">
+    <div id="line1-1">
+    <div id="logo">
+      <a href="/">
+        <img class="swingimage" src="https://cdn.shopify.com/s/files/1/2171/8349/files/Pasted.png?1092274628692787752" />
+      </a>
+    </div>
+    </div>
+
+    <div id="line2-1">
+
+          <input type="checkbox" class="read-more-state" id="post-2" />
+          <ul class="read-more-wrap" id="list2">
+            <li>
+              <h3>Clients</h3>
+            </li>
+
+            {% for link in linklists['featured-clients'].links %}
+
+            <li><a id="{{ link.title | handle }}" style="text-decoration: none" href="{{ link.url }}">{{ link.title }}</a></li>
+
+            {% endfor %} {% for link in linklists['clients'].links %}
+            <li class="read-more-target"><a id="{{ link.title | handle }}" href="{{ link.url }}" style="text-decoration: none">{{ link.title }}</a></li>
+            {% endfor %}
+
+          </ul>
+          <label for="post-2" class="read-more-trigger"></label>
+    </div>
+
+    <div id="line3-1">
+        <ul id="list1">
+          <li>
+            <h3>Info</h3>
+          </li>
+          {% for link in linklists['info'].links %}
+
+          <li><a id="{{ link.title | handle }}" href="{{ link.url }}" style="text-decoration: none">{{ link.title }}</a></li>
+
+          {% endfor %}
+        </ul>
+
+      </div>
+    </div>
+  <div id="line4-1">
+
+        <div id="menu-icon">
+          <a href="/"><img src="https://cdn.shopify.com/s/files/1/2171/8349/files/Pasted-1.png?1092274628692787752" /></a>
+        </div>
+          <div id="contact-icon">
+            <img src="https://cdn.shopify.com/s/files/1/2171/8349/files/Pasted-2.png?1092274628692787752" />
+          </div>
+  </div> 
+  <div class="row-2">
+  <div id="line1-2">
+    <div id="message">
+        <div class="weMake">
+          <h1>We make <br>
+          internet that <br></h1>
+          <div class="fadein">
+            <img id="f4" src="https://cdn.shopify.com/s/files/1/2171/8349/files/4-works.svg?18359686191735422539" />
+            <img id="f3" src="https://cdn.shopify.com/s/files/1/2171/8349/files/3-delights.svg?18359686191735422539" />
+            <img id="f2" src="https://cdn.shopify.com/s/files/1/2171/8349/files/2-engages.svg?18359686191735422539" />
+            <img id="f1" src="https://cdn.shopify.com/s/files/1/2171/8349/files/1-sells.svg?18359686191735422539" />
+          </div>
+        </div>
+        <p id="tvg">The Vaan Group are design and tech partners for e-commerce companies big and small.</p>
+        <p id="welcome">Welcome</p>
+    </div>
+  </div>
+    <div id="line4-2">
+        <div id="support">
+          <p>We are proud supporters of</p>
+          <img src="https://cdn.shopify.com/s/files/1/2171/8349/files/Pasted-8.png?1092274628692787752" />
+          <img src="https://cdn.shopify.com/s/files/1/2171/8349/files/Pasted-9.png?1092274628692787752" />
+        </div>
+    </div>  
+  </div>
+</div>
+</body>
